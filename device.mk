@@ -147,3 +147,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.selinux=1
