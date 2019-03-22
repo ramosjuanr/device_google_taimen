@@ -149,3 +149,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
+
+$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
