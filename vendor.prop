@@ -1,0 +1,24 @@
+#
+# Vendor.prop overrides
+#
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+PRODUCT_VENDOR_MODEL := Pixel 2 XL
+
+
+
+
+
+
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.build.fingerprint=google/taimen/taimen:10/QQ1A.191205.008/5974827:user/release-keys
+    ro.vendor.build.id=QQ1A.191205.008
+    ro.vendor.build.tags=release-keys
+    ro.vendor.build.type=user
+    ro.product.vendor.brand=google
+    ro.product.vendor.manufacturer=Google
+    ro.product.vendor.name=taimen
+    ro.storage_manager.enabled=true
+    drm.service.enabled=true
+    media.mediadrmservice.enable=true
