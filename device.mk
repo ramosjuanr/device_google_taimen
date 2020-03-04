@@ -15,7 +15,7 @@
 #
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := 560dpi
