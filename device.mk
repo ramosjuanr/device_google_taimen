@@ -131,6 +131,14 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
   persist.config.calibration_fac=/persist/sensors/calibration/calibration.xml
 
+# For bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/bootanimation-dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+
+# For bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+
 # Vibrator HAL
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.vibrator.hal.click.duration=10 \
@@ -152,3 +160,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_gl_app_phase_offset_ns=15000000
 
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+
