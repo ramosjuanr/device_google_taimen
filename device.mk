@@ -149,6 +149,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.traced.enable=1
 
+BUILD_FINGERPRINT := google/taimen/taimen:10/QQ2A.200305.002/6138846:user/release-keys
+PRIVATE_BUILD_DESC := taimen-user 10 QQ2A.200305.002 6138846 release-keys
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    ro.build.description=taimen-user 10 QQ2A.200305.002 6138846 release-keys \
+    PRIVATE_BUILD_DESC="taimen-user 10 QQ2A.200305.003 6138846 release-keys"
+
 # Early phase offset for SurfaceFlinger (b/75985430)
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=1500000
